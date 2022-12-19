@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/slick.css">
     <script src="./js/jquery-1.12.4.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" defer></script>
     <script src="./js/slick.min.js"></script>
 </head>
 
 <body>
     <header class="header">
         <div class="inner">
-            <h1><img src="./img/logo.png" alt=""></h1>
+            <h1><a href=""><img src="./img/logo.png" alt=""></a></h1>
             <div class="gnb">
                 <ul>
                     <li><a href="">점포안내</a></li>
@@ -31,17 +31,52 @@
             </div>
             <div class="right">
                 <div class="login">
-                    <img src="./img/gnb_ico_login.png" alt="">
-                    <span>로그인</span>
+                    <i class="xi-user-o"></i>
+                    <a href=""><span>로그인</span></a>
                 </div>
                 <figure>
-                    <img src="./img/gnb_ico_search.png" alt="">
+                    <a href=""><i class="xi-search"></i></a>
                 </figure>
             </div>
         </div>
     </header>
     <main>
-
+        <div class="mainVisual">
+            <div class="mainSlide">
+                <div class="itm itm01">
+                    <div class="left"></div>
+                    <img src="./img/slide01.jpg" alt="">
+                    <p>꿈 같은 겨울을 만들어 줄<br />크리스마스<br />스토리</p>
+                </div>
+                <div class="itm itm02">
+                    <img src="./img/slide02.jpg" alt="">
+                    <p>홀리데이를 위한<br />
+                        눈부신 까르띠에의<br />
+                        기프트 셀렉션<br /></p>
+                </div>
+                <div class="itm itm03">
+                    <img src="./img/slide03.jpg" alt="">
+                    <p>연말의 감성을 담은<br />
+                        커피의 향,<br />
+                        이달의 스페셜 티 커피<br /></p>
+                </div>
+                <div class="itm itm04">
+                    <img src="./img/slide04.jpg" alt="">
+                    <p>MAGAZINE<br />
+                        SHINSEGAE<br /></p>
+                </div>
+            </div>
+            <div class="bar"><span></span></div>
+            <div class="txt">
+                <a href="">
+                    <p>VIEW MORE</p>
+                </a>
+            </div>
+            <div class="scroll">
+                <p>SHOPPING NEWS & EVENT</p>
+                <span class="line"></span>
+            </div>
+        </div>
     </main>
     <footer class="footer">
 

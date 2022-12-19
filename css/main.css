@@ -36,8 +36,14 @@
     padding: 50px 0;
 }
 
+.header .inner .right i {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
 .header .inner .login span {
     font-size: 14px;
+
 }
 
 .header .inner .login span::after {
@@ -50,4 +56,219 @@
     background: #ddd;
     margin: 0 0 0 15px;
     vertical-align: middle;
+}
+
+.mainVisual {
+    position: relative;
+    font-family: 'Noto Serif KR', 'Noto Serif';
+}
+
+.mainSlide .itm {
+    position: relative;
+    height: 850px;
+}
+
+.mainSlide .itm p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 200px 0 0 150px;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 86px;
+    height: 240px;
+    color: #fff;
+}
+
+.mainSlide .slick-dots {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    z-index: 1;
+}
+
+.mainSlide .slick-dots>li {
+    display: inline-block;
+    margin: 0 65px 0 0;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    font-weight: 300;
+    cursor: pointer;
+    text-align: center;
+    text-indent: 6px;
+}
+
+.mainSlide .slick-dots>li.slick-active {
+    color: #f8f8f8;
+    font-weight: 500;
+}
+
+
+.mainVisual .txt {
+    position: absolute;
+    top: 470px;
+    left: 150px;
+    color: #fff;
+    padding: 15px;
+
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.mainVisual .txt::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    transition: 0.5s;
+
+}
+
+.mainVisual .txt:hover::before {
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+}
+
+
+.mainVisual .txt::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+
+    transition: 0.5s;
+}
+
+.mainVisual .txt:hover::after {
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+}
+
+.mainVisual .bar {
+    position: absolute;
+    top: 180px;
+    left: 150px;
+    width: 360px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.5);
+
+}
+
+.mainVisual .bar span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 90px;
+    height: 100%;
+    background: #fff;
+}
+
+
+.mainSlide .slick-arrow {
+    position: absolute;
+    top: 160px;
+    left: 570px;
+    z-index: 999;
+    cursor: pointer;
+
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    font-size: 0;
+
+    width: 40px;
+    height: 40px;
+}
+
+.mainSlide .slick-arrow:hover {
+    border: 1px solid #fff;
+    border-radius: 50%;
+
+    transition: 1s;
+}
+
+.mainSlide .slick-prev {
+    background: url(../img/btn_arrow_next_white.png) no-repeat center center/cover;
+    transform: rotate(180deg);
+    margin: 0 0 0 -50px;
+}
+
+.mainSlide .slick-next {
+    background: url(../img/btn_arrow_next_white.png) no-repeat center center/cover;
+}
+
+
+
+.mainVisual .scroll p {
+    font-family: 'Noto Sans KR';
+    position: absolute;
+    bottom: 190px;
+    left: 150px;
+    color: #fff;
+}
+
+.mainVisual .scroll .line {
+    position: absolute;
+    bottom: 60px;
+    left: 150px;
+    height: 86px;
+}
+
+.mainVisual .scroll .line::before {
+    position: absolute;
+    content: "";
+    bottom: -50px;
+    left: 10px;
+    width: 1px;
+    opacity: 0.8;
+
+    background-color: #fff;
+    animation: scroll_motion 2.5s infinite;
+}
+
+.mainVisual .scroll .line::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: rotate(140deg);
+    opacity: 0.8;
+}
+
+@keyframes scroll_motion {
+    0% {
+        top: 0;
+        height: 0;
+    }
+
+    45% {
+        top: 0;
+        height: 100%;
+    }
+
+    55% {
+        top: 0;
+        height: 100%;
+    }
+
+    100% {
+        top: 100%;
+        height: 0;
+    }
 }

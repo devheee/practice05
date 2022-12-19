@@ -1,27 +1,25 @@
-$('.mainfull').fullpage({
-    anchors: ['sec01', 'sec02', 'sec03'],
-    // // navigation: true,
-    afterLoad: function (anchorLink, index) {
-        console.log(anchorLink, index)
-        $('nav>a').eq(index - 1).addClass('on').siblings().removeClass('on');
-        $('.section').eq(index - 1).addClass('on').siblings().removeClass('on');
-
-        if (index == 3 || index == 4) {
-            $('nav>a').eq(2).addClass('dark').siblings().addClass('gray');
-        } else {
-            $('nav>a').eq(2).removeClass('dark').siblings().removeClass('gray');
-        }
-    }
-});
 
 $('.mainSlide').slick({
     arrows: true,
-    dots: false,
-    autoplay: true,
+    dots: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     speed: 2000,
     pauseOnHover: false,
     pauseOnFocus: false,
+
+    customPaging: function (slider, i) {
+        var thumb = $(slider.$slides[i]).data();
+        if (i == '0') {
+            i = "01";
+        } else if (i == '1') {
+            i = "02";
+        } else if (i == '2') {
+            i = "03";
+        } else if (i == '3') {
+            i = "04";
+        } return '<a class="dot">' + i + '</a>';
+    }
 });
 
 var barwidth = $('.bar').width();
@@ -29,9 +27,6 @@ $('.mainSlide').on('afterChange', function (e, s, c) {
     var bb = barwidth / s.slideCount;
     $('.bar span').css({ width: bb })
     $('.bar span').css({ width: bb * (c + 1) })
-
-    $('.num span').text("0" + (c + 1))
-    $('.num strong').text(s.slideCount)
 });
 
 
