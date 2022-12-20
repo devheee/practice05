@@ -1,3 +1,7 @@
+/* * {
+    outline: 1px solid tomato;
+} */
+
 @keyframes scroll_motion {
     0% {
         top: 0;
@@ -28,13 +32,9 @@
 .header h1 {
     position: absolute;
     top: 0;
-    left: 100px;
+    left: 150px;
     font-size: 0;
     line-height: 100px;
-}
-
-.header h1 img {
-    vertical-align: middle;
 }
 
 .header .inner {
@@ -52,14 +52,14 @@
 .header .inner .right {
     position: absolute;
     top: 0;
-    right: 100px;
+    right: 150px;
     display: flex;
     gap: 15px;
-    padding: 50px 0;
+    line-height: 100px;
 }
 
 .header .inner .right i {
-    font-size: 20px;
+    font-size: 22px;
     vertical-align: middle;
 }
 
@@ -289,14 +289,33 @@
     margin: 0 0 60px 0;
 }
 
-.mainEvent>p {
+.mainEvent .tit {
     text-align: center;
-    color: #999;
+}
+
+.mainEvent .tit img {
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+.mainEvent .tit>p {
+    display: inline-block;
+    color: #777;
     margin: 0 0 50px 0;
+    font-weight: 300;
+}
+
+.mainEvent .tit>p>strong {
+    color: #111;
+}
+
+.mainEvent .tit>p>span {
+    color: #8b714c;
+    text-decoration: underline;
+    text-underline-position: under;
 }
 
 .mainEvent .event {
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
