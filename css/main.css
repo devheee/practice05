@@ -1,3 +1,25 @@
+@keyframes scroll_motion {
+    0% {
+        top: 0;
+        height: 0;
+    }
+
+    45% {
+        top: 0;
+        height: 100%;
+    }
+
+    55% {
+        top: 0;
+        height: 100%;
+    }
+
+    100% {
+        top: 100%;
+        height: 0;
+    }
+}
+
 .header {
     position: relative;
 
@@ -251,24 +273,73 @@
     opacity: 0.8;
 }
 
-@keyframes scroll_motion {
-    0% {
-        top: 0;
-        height: 0;
-    }
 
-    45% {
-        top: 0;
-        height: 100%;
-    }
 
-    55% {
-        top: 0;
-        height: 100%;
-    }
+.mainEvent {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
 
-    100% {
-        top: 100%;
-        height: 0;
-    }
+.mainEvent h2 {
+    font-family: 'Noto Serif';
+    font-size: 50px;
+    text-align: center;
+    color: #111;
+    margin: 0 0 60px 0;
+}
+
+.mainEvent>p {
+    text-align: center;
+    color: #999;
+    margin: 0 0 50px 0;
+}
+
+.mainEvent .event {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.mainEvent .event .txt_box {
+    display: inline-block;
+    padding: 20px 0 30px 10px;
+}
+
+.mainEvent .event .txt_box span {
+    font-size: 14px;
+    color: #8b714c;
+}
+
+.mainEvent .event .txt_box .bars::before {
+    content: "";
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 12px;
+    background: #999;
+    margin: 0 5px;
+    vertical-align: bottom;
+}
+
+.mainEvent .event .txt_box p {
+    font-size: 18px;
+    margin: 10px 0 10px 0;
+    line-height: 28px;
+}
+
+.mainEvent .event .box {
+    position: relative;
+}
+
+.mainEvent .event .box .txt_box em {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0 0 0 10px;
+    font-size: 14px;
+    color: #888;
+    line-height: 24px;
 }
