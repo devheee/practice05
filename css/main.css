@@ -351,6 +351,7 @@
 
 .mainEvent .event .box {
     position: relative;
+    overflow: hidden;
 }
 
 .mainEvent .event .box .txt_box em {
@@ -362,3 +363,5 @@
     color: #888;
     line-height: 24px;
 }
+
+.mainEvent .more span {}
