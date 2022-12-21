@@ -24,6 +24,15 @@
     }
 }
 
+
+h2 {
+    font-family: 'Noto Serif';
+    font-size: 50px;
+    text-align: center;
+    color: #111;
+    margin: 0 0 60px 0;
+}
+
 .header {
     position: relative;
 
@@ -281,14 +290,6 @@
     padding: 100px 0;
 }
 
-.mainEvent h2 {
-    font-family: 'Noto Serif';
-    font-size: 50px;
-    text-align: center;
-    color: #111;
-    margin: 0 0 60px 0;
-}
-
 .mainEvent .tit {
     text-align: center;
 }
@@ -364,4 +365,160 @@
     line-height: 24px;
 }
 
-.mainEvent .more span {}
+.mainEvent .more {
+    display: block;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.mainEvent .more span {
+    border-bottom: 2px solid rgb(242, 44, 45);
+}
+
+.mainArt {
+    padding: 0 0 200px 0;
+}
+
+.mainArt .inner {
+    width: 1200px;
+    height: 480px;
+}
+
+.mainArt .left_tab {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+}
+
+.mainArt .left_tab .itm {
+    display: none;
+}
+
+.mainArt .left_tab .itm.on {
+    display: block;
+}
+
+.mainArt .left_tab .tit {
+    font-size: 36px;
+    color: #fff;
+    line-height: 56px;
+    font-weight: 600;
+    font-family: 'Noto Serif KR', serif;
+    margin: 0 0 30px 0;
+}
+
+.mainArt .left_tab span {
+    display: block;
+    font-size: 18px;
+    color: #e0c799;
+    margin: 25px 5px;
+    letter-spacing: 1px;
+}
+
+.mainArt .left_tab a {
+    display: inline-block;
+    font-size: 12px;
+    padding: 10px;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+.mainArt .art_content_wrap {
+    position: relative;
+}
+
+.mainArt .right_slide {
+    position: absolute;
+    top: 50px;
+    right: -250px;
+    width: 1200px;
+}
+
+.art_content_wrap .inner .arrows {
+    position: absolute;
+    bottom: 100px;
+    left: 728px;
+    color: #fff;
+    font-size: 14px;
+
+}
+
+.art_content_wrap .inner .arrows i {
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.art_content_wrap .inner .num {
+    position: absolute;
+    bottom: 100px;
+    left: 680px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.mainNow {
+    padding: 0 0 100px 0;
+}
+
+.mainNow .inner {
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mainNow .inner .case {
+    position: relative;
+}
+
+.mainNow .inner figure {
+    position: relative;
+    overflow: hidden;
+}
+
+.mainNow .inner figure .over {
+    position: absolute;
+    top: 400px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px 26px 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+
+    transition: 0.5s;
+    border-top: 2px solid #f22c2d;
+
+}
+
+.mainNow .inner figure:hover .over {
+    top: 200px;
+}
+
+.mainNow .inner .over strong {
+    font-size: 12px;
+    color: #bea36b;
+}
+
+.mainNow .inner .over p {
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    padding: 15px 0 25px;
+    line-height: 28px;
+}
+
+.mainNow .inner .over a {
+    margin: auto 0 0 0;
+    font-size: 13px;
+    align-self: start;
+}
+
+.mainNow .inner .over a i {
+    font-size: 10px;
+}

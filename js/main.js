@@ -30,28 +30,39 @@ $('.mainSlide').on('afterChange', function (e, s, c) {
 });
 
 
-$('.play').click(function () {
-    $('.mainSlide').slick('slickPlay');
-});
+// $('.play').click(function () {
+//     $('.mainSlide').slick('slickPlay');
+// });
 
-$('.stop').click(function () {
-    $('.mainSlide').slick('slickPause');
-});
+// $('.stop').click(function () {
+//     $('.mainSlide').slick('slickPause');
+// });
 
-$('.businessSlide').slick({
-    arrows: true,
-    dots: false,
-    autoplay: false,
-    autoplaySpeed: 4000,
-    pauseOnHover: false,
-    pauseOnFocus: false,
+var bgColor = ['#207844', '#41437b', '#9b3440', '#844141', '#7f7f7f']
+$('.mainArt .inner').css({ background: bgColor[0] });
+
+$('.right_slide').on('init afterChange', function (e, s, c) {
+    console.log(c);
+    $('.mainArt .left_tab .itm').eq(c).addClass('on').siblings().removeClass('on');
+
+    $('.mainArt .inner').css({ background: bgColor[c] })
+    $('.num').text((c ? c + 1 : 1) + '/' + bgColor.length)
 });
 
 $('.right_slide').slick({
-    arrows: true,
+    arrows: false,
     dots: false,
     autoplay: false,
     autoplaySpeed: 4000,
+    slidesToShow: 2,
     pauseOnHover: false,
     pauseOnFocus: false,
 });
+
+$('.arrows i:nth-child(1)').on('click', function () {
+    $('.right_slide').slick('slickPrev')
+})
+
+$('.arrows i:nth-child(2)').on('click', function () {
+    $('.right_slide').slick('slickNext')
+})
