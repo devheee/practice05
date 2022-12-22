@@ -38,7 +38,7 @@ $('.mainSlide').on('afterChange', function (e, s, c) {
 //     $('.mainSlide').slick('slickPause');
 // });
 
-var bgColor = ['#207844', '#41437b', '#9b3440', '#844141', '#7f7f7f']
+var bgColor = ['#1b6e6f', '#207844', '#41437b', '#9b3440', '#844141', '#7f7f7f']
 $('.mainArt .inner').css({ background: bgColor[0] });
 
 $('.right_slide').on('init afterChange', function (e, s, c) {
@@ -46,7 +46,7 @@ $('.right_slide').on('init afterChange', function (e, s, c) {
     $('.mainArt .left_tab .itm').eq(c).addClass('on').siblings().removeClass('on');
 
     $('.mainArt .inner').css({ background: bgColor[c] })
-    $('.num').text((c ? c + 1 : 1) + '/' + bgColor.length)
+    $('.num').html('<span>' + (c ? c + 1 : 1) + '</span>/<span class="op">' + bgColor.length + '</span>');
 });
 
 $('.right_slide').slick({
@@ -57,6 +57,7 @@ $('.right_slide').slick({
     slidesToShow: 2,
     pauseOnHover: false,
     pauseOnFocus: false,
+    variableWidth: true,
 });
 
 $('.arrows i:nth-child(1)').on('click', function () {

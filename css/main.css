@@ -437,6 +437,10 @@ h2 {
     width: 1200px;
 }
 
+.mainArt .right_slide figure {
+    padding: 0 15px;
+}
+
 .art_content_wrap .inner .arrows {
     position: absolute;
     bottom: 100px;
@@ -454,21 +458,29 @@ h2 {
 .art_content_wrap .inner .num {
     position: absolute;
     bottom: 100px;
-    left: 680px;
+    left: 650px;
     color: #fff;
     font-size: 14px;
     font-weight: 300;
 }
 
+.art_content_wrap .inner .num span {
+    padding: 0 10px;
+}
+
+.art_content_wrap .inner .num .op {
+    opacity: 0.5;
+}
+
 .mainNow {
     padding: 0 0 100px 0;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .mainNow .inner {
     display: flex;
     gap: 30px;
-    width: 1200px;
-    margin: 0 auto;
 }
 
 .mainNow .inner .case {
@@ -497,12 +509,21 @@ h2 {
 }
 
 .mainNow .inner figure:hover .over {
-    top: 200px;
+    top: 180px;
+    cursor: pointer;
+}
+
+.mainNow .inner figure:hover .up {
+    top: 150px;
 }
 
 .mainNow .inner .over strong {
     font-size: 12px;
     color: #bea36b;
+}
+
+.mainNow .inner .over strong img {
+    margin-left: 5px;
 }
 
 .mainNow .inner .over p {
@@ -521,4 +542,233 @@ h2 {
 
 .mainNow .inner .over a i {
     font-size: 10px;
+}
+
+.mainNow .sns {
+    text-align: center;
+    padding: 100px 0 50px 0;
+}
+
+.mainNow .sns .txt span {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.mainNow .sns .txt p {
+    padding: 10px 0 20px 0;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.mainNow .sns .txt i {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 0 0 5px;
+    background: url(../img/ico_channel_off.png) no-repeat bottom/cover;
+}
+
+
+.mainNow .sns .txt:hover i {
+    background: url(../img/ico_channel_on.png);
+}
+
+.mainNow .sns ul {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    gap: 15px;
+
+}
+
+.mainNow .sns ul .post {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url(../img/ico_post.png) no-repeat;
+    cursor: pointer;
+}
+
+.mainNow .sns ul .post:hover {
+    background: url(../img/ico_post_on.png) no-repeat;
+}
+
+.mainNow .sns ul .face {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url(../img/ico_facebook.png) no-repeat;
+    cursor: pointer;
+}
+
+.mainNow .sns ul .face:hover {
+    background: url(../img/ico_facebook_on.png) no-repeat;
+}
+
+.mainNow .sns ul .insta {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url(../img/ico_instagram.png) no-repeat;
+    cursor: pointer;
+}
+
+.mainNow .sns ul .insta:hover {
+    background: url(../img/ico_instagram_on.png) no-repeat;
+}
+
+.mainNow .sns ul .youtube {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url(../img/ico_youtube.png) no-repeat;
+    cursor: pointer;
+}
+
+.mainNow .sns ul .youtube:hover {
+    background: url(../img/ico_youtube_on.png) no-repeat;
+}
+
+.mainNow .sns ul .app {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url(../img/ico_app.png) no-repeat;
+    cursor: pointer;
+}
+
+.mainNow .sns ul .app:hover {
+    background: url(../img/ico_app_on.png) no-repeat;
+}
+
+.mainNow .sns ul .kakao {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url(../img/ico_kakao.png) no-repeat;
+    cursor: pointer;
+}
+
+.mainNow .sns ul .kakao:hover {
+    background: url(../img/ico_kakao_on.png) no-repeat;
+}
+
+.mainNow .sns ul .sbot {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url(../img/ico_sbot.png) no-repeat;
+    cursor: pointer;
+}
+
+.mainNow .sns ul .sbot:hover {
+    background: url(../img/ico_sbot_on.png) no-repeat;
+}
+
+
+
+.footer {
+    background: #232323;
+    color: #fff;
+}
+
+.footer .inner_top {
+    position: relative;
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0 25px 0;
+
+    border-bottom: 1px solid #333;
+}
+
+.footer .inner_top figure {
+    margin: 0 30px 0 0;
+}
+
+.footer .inner_top .list {
+    display: flex;
+    flex-direction: column;
+    color: #949494;
+    line-height: 16px;
+}
+
+.footer .inner_top .list .top {
+    display: flex;
+    gap: 30px;
+    font-weight: 300;
+    font-size: 15px;
+    margin: 0 0 10px 0;
+}
+
+.footer .inner_top .list .bottom {
+    display: flex;
+    gap: 30px;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.footer .inner_top .list .bottom .red {
+    font-weight: bold;
+    color: #f22c2d;
+}
+
+.footer .inner_top .fmsite {
+    position: absolute;
+    right: 0;
+}
+
+#f_site {
+    outline: none;
+    font-size: 13px;
+    padding: 5px 10px 5px 0;
+    color: #8c8c8c;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    cursor: pointer;
+}
+
+#f_site option {
+    background: #232323;
+    font-size: 12px;
+}
+
+
+.footer .inner_bottom {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 25px 0;
+
+    font-weight: 300;
+    font-size: 14px;
+    color: #949494;
+    line-height: 24px;
+}
+
+.footer .inner_bottom ul {
+    display: flex;
+    gap: 15px;
+}
+
+.footer .inner_bottom ul li {
+    position: relative;
+    margin: 0 10px 0 0;
+}
+
+.footer .inner_bottom ul li~li::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -11px;
+    width: 1px;
+    height: 12px;
+    background: #555;
+}
+
+.footer .inner_bottom address {
+    font-size: 12px;
+    letter-spacing: 1px;
 }
